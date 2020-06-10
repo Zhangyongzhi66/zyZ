@@ -1,0 +1,286 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [
+
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "dead",
+        "synonyms": ["pass away", "death", "die", "pass on", "depart", "perish"]
+      },
+      {
+        "value": "confirmed",
+        "synonyms": ["definite", "sure", "make a definite diagnosis"]
+      },
+      {
+        "value": "country",
+        "synonyms": ["state"]
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good evening",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "dear sir",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "yes",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yep",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great choice",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "no, thx",
+        "intent": "deny",
+        "entities": []
+      },
+       {
+        "text": "no",
+        "intent": "deny",
+        "entities": []
+      },
+       {
+        "text": "Nope, thank you",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "show me Countries with severe outbreaks",
+        "intent": "search_country",
+        "entities": []
+      },
+      {
+        "text": "show me countries with mild outbreaks",
+        "intent": "search_country",
+        "entities": []
+      },
+      {
+        "text": "show me countries with high fatalit",
+        "intent": "search_country",
+        "entities": []
+      },
+      {
+        "text": "show me countries with low case fatality rates",
+        "intent": "search_country",
+        "entities": []
+      },
+      {
+        "text": " where the epidemic is improving?",
+        "intent": "search_country",
+        "entities": []
+      },
+      {
+        "text": "show me Cities with severe outbreaks",
+        "intent": "search_city",
+        "entities": []
+      },
+       {
+        "text": "show me cities with low case fatality rates",
+        "intent": "search_city",
+        "entities": []
+      },
+       {
+        "text": "show me Cities with severe outbreaks",
+        "intent": "search_city",
+        "entities": []
+      },
+      {
+        "text": "i want to know condition about China",
+        "intent": "condition-country",
+        "entities": [
+          {
+            "start": 65,
+            "end": 74,
+            "value": "China",
+            "entity": "country"
+          },
+          {
+            "start": 1,
+            "end": 9,
+            "value": "USA",
+            "entity": "country"
+          },
+          {
+            "start": 87,
+            "end": 96,
+            "value": "Italy",
+            "entity": "artist"
+          }
+        ]
+      },
+      {
+        "text": "How about England",
+        "intent": "condition-country",
+        "entities": [
+          {
+            "start": 18,
+            "end": 27,
+            "value": "England",
+            "entity": "country"
+          }
+        ]
+      },
+      {
+        "text": "Thailand",
+        "intent": "condition-country",
+        "entities": [
+          {
+            "start": 101,
+            "end": 110,
+            "value": "Thailand",
+            "entity": "country"
+          }
+        ]
+      },
+      {
+        "text": "How about Beijing?",
+        "intent": "condition-city",
+        "entities": [
+          {
+            "start": 264,
+            "end": 273,
+            "value": "Beijing",
+            "entity": "city"
+          }
+        ]
+      },
+      {
+        "text": "i want to know about NewYork",
+        "intent": "condition-city",
+        "entities": [
+          {
+            "start": 1,
+            "end": 10,
+            "value": "NewYork",
+            "entity": "city"
+          }
+        ]
+      },
+      {
+        "text": "How's Shenyang ",
+        "intent": "condition-city",
+        "entities": [
+          {
+            "start": 641,
+            "end": 650,
+            "value": "Shenyang",
+            "entity": "city"
+          }
+        ]
+      },
+      {
+        "text": "How London",
+        "intent": "condition-city",
+        "entities": [
+          {
+            "start": 147,
+            "end": 156,
+            "value": "London",
+            "entity": "city"
+          }
+        ]
+      },
+      {
+        "text": "I am in Japan",
+        "intent": "condition-city",
+        "entities": [
+          {
+            "start": 214,
+            "end": 223,
+            "value": "Japan",
+            "entity": "city"
+          },
+          {
+            "start": 67,
+            "end": 76,
+            "value": "Washington",
+            "entity": "city"
+          },
+          {
+            "start": 316,
+            "end": 325,
+            "value": "Suzhou",
+            "entity": "city"
+          }
+        ]
+      },
+
+
+        ]
+      }
+
+  }
+
